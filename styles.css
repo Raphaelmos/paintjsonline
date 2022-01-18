@@ -1,0 +1,141 @@
+@import url(reset.css);
+body {
+    background-color: rgb(155, 155, 155);
+    font-family: fantasy;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#bundleLeft {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+
+#bundleRight {
+  display: flex;
+  flex-direction: column;
+}
+
+canvas {
+    width: 805px;
+    height: 805px;
+    background-color: rgb(255, 251, 251);
+    border-radius: 15px;
+    box-align: center;
+    box-shadow: 0 4px 6px rgba(red, green, blue, alpha) 0 1px 3px rgba(0,0,0, 0.08);
+
+}
+
+#jsColors {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 35px;
+}
+
+.controls { 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.controls .controls_btns {
+    margin-right: 300px;
+    margin-top: 30px;
+    margin-left: 20px;
+    flex-direction: row;
+    box-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.controls_btns button {
+    all:unset;
+    cursor: pointer;
+    padding: 5px 0px;
+    width: 80px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(red, green, blue, alpha) 0 1px 3px rgba(0,0,0, 0.08);
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid rgba(0,0,0, 0.02);
+    color: rgba(0,0,0, 0.8);
+}
+
+.controls_btns button:active{
+    transform: scale(0.96);
+}
+
+
+.controls  .controls_couleurs {
+    display: flex;
+    padding-left: 0px;
+}
+
+
+.controls_couleurs .controls_couleur {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 3px;
+    box-shadow: 0 4px 6px rgba(red, green, blue, alpha) 0 1px 3px rgba(0,0,0, 0.08);
+    box-sizing: border-box;
+
+}
+
+.controls .controls_range {
+    margin-bottom: 30px;
+    margin-right: 0px;
+}
+.barre {
+    max-width: 900px;
+    margin: auto;
+    font-family: "Arial";
+    flex-direction: column;
+    display: flex;
+
+}
+
+.outils{
+    width: 100%;
+    background-color: #f1eded;
+    overflow: auto;
+}
+
+.outils a {
+    float: left;
+    width: 10%;
+    text-align: center;
+    padding: 6px 5px;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+.outils a:hover {
+    background-color: rgb(199, 187, 187);
+  }
+
+  .selected {
+    background-color: rgb(223, 207, 207); 
+}
+
+#img-data-div{
+    width: 100%;
+    max-width: 900px;
+    height: 200px;
+}
+
+.outils a img{
+    max-width:100%;
+    height:auto;
+}
