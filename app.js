@@ -5,6 +5,7 @@ const canvas = document.querySelector('canvas');
 const mode = document.getElementById('jsMode');
 const ctx = canvas.getContext('2d');
 const saveBtn = document.getElementById('jsSave');
+const range = document.getElementById('jsRange');
 
 canvas.width = CANVAS_SIZE;
 canvas.height = CANVAS_SIZE;
@@ -225,4 +226,13 @@ function handleSaveClick(){
 
 if (saveBtn) {
     saveBtn.addEventListener('click', handleSaveClick);
+}
+
+if (range) {
+    range.addEventListener('input', handleRangeChange);
+}
+
+function handleRangeChange(event){
+    const rangeValue = event.target.value;
+    ctx.lineWidth = rangeValue;
 }
