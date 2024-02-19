@@ -161,3 +161,113 @@ canvas {
     max-width:100%;
     height:auto;
 }
+
+/*
+
+
+@import url(reset.css);
+
+body {
+  background-color: rgb(155, 155, 155); 
+  font-family: fantasy;
+  padding: 50px 0;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #ddd;
+  border-radius: 4px;  
+}
+
+.left-section,
+.right-section {
+  float: left;
+  box-sizing: border-box;
+  padding: 20px;  
+}
+
+.left-section {
+  width: 70%;
+}
+
+.right-section {
+  width: 30%;
+}
+
+canvas {
+  width: 1100px;
+  height: 905px;
+  background-color: rgb(255, 251, 251);
+  border-radius: 15px;  
+}
+
+@media (min-width: 1024px) {
+  canvas {
+    width: 1200px; 
+  }
+}
+
+#jsColors {
+  float: right;
+  padding-left: 0;
+}
+
+.controls_couleurs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; 
+}
+
+.controls_couleur {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 3px;  
+}
+
+/* Buttons */
+.controls_btns button {
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Inputs */  
+.controls_range input {
+  width: 200px;
+}
+
+/* Colors */
+.primary-color {
+  color: blue; 
+}
+
+/* Shadows */
+.box-shadow {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Fonts */  
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  /* responsive styles
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+    */
