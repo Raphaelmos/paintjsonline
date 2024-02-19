@@ -8,6 +8,7 @@ Version en ligne de mon paint en JavaScript
 
 Currently improving the visual and adding more options on the page
 Thinking of adding a whole side menu for the options to have a better view of the canvas instead of centering everything in the middle
+Giving it a more professional look instead of a beginner project view
 
 # How to use ? 
 ```
