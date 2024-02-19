@@ -167,9 +167,6 @@ canvas {
 
 /*
 
-
-@import url(reset.css);
-
 body {
   background-color: rgb(155, 155, 155); 
   font-family: fantasy;
@@ -242,11 +239,6 @@ canvas {
 /* Inputs */  
 .controls_range input {
   width: 200px;
-}
-
-/* Colors */
-.primary-color {
-  color: blue; 
 }
 
 /* Shadows */
