@@ -1,6 +1,6 @@
 const CANVAS_SIZE = 1200;
 const INITIAL_COLOR = '#2c2c2c';
-
+/* issue possible with CANVAS_SIZE giving value here and changing it twice in the CSS */
 const canvas = document.querySelector('canvas');
 const mode = document.getElementById('jsMode');
 const ctx = canvas.getContext('2d');
