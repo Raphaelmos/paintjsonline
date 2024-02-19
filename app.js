@@ -89,6 +89,14 @@ function paintCanvas(event) {
     }
 }
 
+function handleMouseMove(e) {
+
+  const boundingRect = canvas.getBoundingClientRect();
+
+  const canvasX = e.clientX - boundingRect.left;
+  const canvasY = e.clientY - boundingRect.top;
+}
+
 function paintBegin(event) {
     canvas.addEventListener('mousemove', paintCanvas);
     canvas.addEventListener('mouseup', paintEnd);
