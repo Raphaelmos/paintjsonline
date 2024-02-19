@@ -4,6 +4,7 @@ Online Version of my Paint JS web application
 
 Version en ligne de mon paint en JavaScript
 
+# Currently improving the visual and adding more options on the page
 
 # How to use ? 
 ```
