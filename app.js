@@ -250,7 +250,7 @@ const openFileBtn = document.getElementById('open-file');
 openFileBtn.addEventListener('click', () => {
   document.getElementById('fileInput').click();
 })
-/*
+
 const fileInput = document.getElementById('fileInput');
 
 fileInput.addEventListener('change', () => {
@@ -265,4 +265,4 @@ fileInput.addEventListener('change', () => {
   img.src = URL.createObjectURL(file);
 
 })
-*/
+
