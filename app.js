@@ -1,4 +1,4 @@
-const CANVAS_SIZE = 1205;
+const CANVAS_SIZE = 1255;
 const INITIAL_COLOR = '#2c2c2c';
 
 const canvas = document.querySelector('canvas');
