@@ -1,180 +1,61 @@
 @import url(reset.css);
 
-/* Currently editing all the CSS to have a better aesthetic */ 
-
-body {
-    background-color: rgb(155, 155, 155);
-    font-family: fantasy;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#bundleLeft {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   gap: 10px;
-}
-
-#bundleRight {
-  display: flex;
-  flex-direction: column;
-}
-
-canvas {
-    width: 1200px;
-    height: 1200px;
-    background-color: rgb(255, 251, 251);
-    border-radius: 15px;
-    box-align: center;
-    box-shadow: 0 4px 6px rgba(red, green, blue, alpha) 0 1px 3px rgba(0,0,0, 0.08);
-
-}
-
-canvas {
-  max-width: 100%;
-  height: auto;
-}
-
-@media (min-width: 1024px) {
-  canvas {
-    width: 1200px;
-  }
-}
-
-
-#jsColors {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-left: 35px;
-}
-
-.countrols_couleur {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.controls { 
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    font-weight: bold;
-}
-
-.controls-container {
-  display: flex;
-}
-
-.controls .controls_btns {
-    margin-right: 300px;
-    margin-top: 30px;
-    margin-left: 20px;
-    flex-direction: row;
-    box-align: right;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.controls_btns button {
-    all:unset;
-    cursor: pointer;
-    padding: 5px 0px;
-    width: 80px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(red, green, blue, alpha) 0 1px 3px rgba(0,0,0, 0.08);
-    border-radius: 5px;
-    background-color: white;
-    border: 1px solid rgba(0,0,0, 0.02);
-    color: rgba(0,0,0, 0.8);
-}
-
-.controls_btns button:active{
-    transform: scale(0.96);
-}
-
-
-.controls  .controls_couleurs {
-    display: flex;
-    padding-left: 0px;
-}
-
-
-.controls_couleurs .controls_couleur {
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
-    cursor: pointer;
-    padding: 3px;
-    box-shadow: 0 4px 6px rgba(red, green, blue, alpha) 0 1px 3px rgba(0,0,0, 0.08);
-    box-sizing: border-box;
-
-}
-
-.controls .controls_range {
-    margin-bottom: 30px;
-    margin-right: 0px;
-}
-.barre {
-    max-width: 900px;
-    margin: auto;
-    font-family: "Arial";
-    flex-direction: column;
-    display: flex;
-
-}
-
-.outils{
-    width: 100%;
-    background-color: #f1eded;
-    overflow: auto;
-}
-
-.outils a {
-    float: left;
-    width: 10%;
-    text-align: center;
-    padding: 6px 5px;
-    transition: all 0.5s ease;
-    color: white;
-}
-
-.outils a:hover {
-    background-color: rgb(199, 187, 187);
-  }
-
-  .selected {
-    background-color: rgb(223, 207, 207); 
-}
-
-#img-data-div{
-    width: 100%;
-    max-width: 900px;
-    height: 200px;
-}
-
-.outils a img{
-    max-width:100%;
-    height:auto;
-}
-
-/*
-
 body {
   background-color: rgb(155, 155, 155); 
   font-family: fantasy;
   padding: 50px 0;
 }
 
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex; 
+}
+
+.hide {
+  transform: translateY(-100%); 
+}
+
+header {
+  top: 0;
+  left: 0;  
+  width: 100%;
+  height: 50px; /* reduced height */
+  padding: 10px 20px; /* reduced padding */
+  background: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+#open-file {
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+}
+.header-inner {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#open-file {
+  /* style button */
+}
+
 .container {
-  width: 900px;
+  width: 80px;
   margin: 0 auto;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   border: 1px solid #ddd;
@@ -197,15 +78,15 @@ body {
 }
 
 canvas {
-  width: 1200px;
-  height: 905px;
+  width: 1100px;
+  height: 1100px;
   background-color: rgb(255, 251, 251);
   border-radius: 15px;  
 }
 
 @media (min-width: 1024px) {
   canvas {
-    width: 1200px; 
+    width: 1100px; 
   }
 }
 
@@ -230,7 +111,7 @@ canvas {
 
 /* Buttons */
 .controls_btns button {
-  padding: 5px 10px;
+  padding: 6px 10px;
   border-radius: 4px;
   color: #333;
   cursor: pointer;
@@ -240,6 +121,7 @@ canvas {
 .controls_range input {
   width: 200px;
 }
+
 
 /* Shadows */
 .box-shadow {
@@ -265,4 +147,3 @@ body {
   from {opacity: 0;}
   to {opacity: 1;}
 }
-    */
