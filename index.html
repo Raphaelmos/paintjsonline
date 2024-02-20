@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title> RM Projet Paint</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="logo.png" />
-    <meta name="author" content="RM." />
-    <meta name="description" content="Online Paint." />
 </head>
 
 <body>
@@ -29,15 +26,16 @@
                 <a href="#" id="polygone" onclick="changePaintTool('polygone')"><img src="polygone.png"></a>
             </div><br>
         </div>
-        <a href="https://github.com/Raphaelmos/paintjsonline"><img src="gitlogo.png" alt="Link code"></a>
+      
     </div>
     <div id="bundleRight">
         <div class="controls">
             <div class="controls_btns">
+              <a href="https://github.com/Raphaelmos/paintjsonline"><img src="gitlogo.png" alt="Link code"></a>
                 <button id="jsMode" onclick="togglePaintMode()">Peinture</button>
                 <button id="jsSave">Sauver</button>
+                <input type="file" id="fileInput">
                 <button type="reset"><a href="index.html">Reset</a></button>
-                 <input type="file" id="fileInput">
             </div>
             <div class="controls_couleurs" id="jsColors">
                 <div class="controls_couleur jsColor" style="background-color:#2c2c2c"></div>
@@ -50,7 +48,8 @@
                 <div class="controls_couleur jsColor" style="background-color:rgb(0, 145, 255)"></div>
                 <div class="controls_couleur jsColor" style="background-color:blue"></div>
                 <div class="controls_couleur jsColor" style="background-color:rgb(95, 26, 234)"></div>
-                <div class="controls_couleur jsColor" style="background-color:#800080"></div>
+                <div class="controls_couleur jsColor"style="background-color:rgb(95, 26, 234)"></div>
+    <div class="controls_couleur jsColor" style="background-color:#800080"></div>
                 <div class="controls_couleur jsColor" style="background-color:#FFC0CB"></div>
                 <div class="controls_couleur jsColor" style="background-color:#A52A2A"></div>
                 <div class="controls_couleur jsColor" style="background-color:#00FFFF"></div>
@@ -63,8 +62,6 @@
                 <div class="controls_couleur jsColor" style="background-color:#006400"></div>
                 <div class="controls_couleur jsColor" style="background-color:#8B0000"></div>
                 <div class="controls_couleur jsColor" style="background-color:#000080"></div>
-
-                
             </div>
 
         </div>
