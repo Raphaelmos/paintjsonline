@@ -244,3 +244,21 @@ function handleRangeChange(event){
     const rangeValue = event.target.value;
     ctx.lineWidth = rangeValue;
 }
+
+
+/*
+const fileInput = document.getElementById('fileInput');
+
+fileInput.addEventListener('change', () => {
+
+  const file = fileInput.files[0];
+
+  const img = new Image();
+  img.onload = () => {
+    ctx.drawImage(img, 0, 0);
+  }
+
+  img.src = URL.createObjectURL(file);
+
+})
+*/
