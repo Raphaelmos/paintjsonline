@@ -245,7 +245,11 @@ function handleRangeChange(event){
     ctx.lineWidth = rangeValue;
 }
 
+const openFileBtn = document.getElementById('open-file');
 
+openFileBtn.addEventListener('click', () => {
+  document.getElementById('fileInput').click();
+})
 /*
 const fileInput = document.getElementById('fileInput');
 
