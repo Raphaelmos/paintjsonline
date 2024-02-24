@@ -26,5 +26,5 @@ It's also very rewarding personally. You'll gain experience collaborating with o
 ## Possible improvements 
 
 Button to switch the canvas into a grid to make a pixelart instead of a classic canvas
-
+Multiple layers 
 Change as will of size of the canvas
