@@ -6,9 +6,10 @@ Version en ligne de mon paint en JavaScript
 
 # *Under construction but still usable*
 
-Currently improving the visual and adding more options on the page
-Thinking of adding a whole side menu for the options to have a better view of the canvas instead of centering everything in the middle
-Giving it a more professional look instead of a beginner project view
+Currently improving the visual and adding more options on the page <br>
+Thinking of adding a whole side menu for the options to have a better view of the canvas instead of centering everything in the middle <br>
+Giving it a more professional look instead of a beginner project view <br>
+Working on the issues in pixel-paint that would help increase the quality of this one 
 
 # How to use ? 
 ```
