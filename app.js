@@ -86,8 +86,6 @@ function paintCanvas(event) {
             /* 
         case "eraser": {
       ctx.putImageData(startImage, 0, 0);
-
-      // Erase circle shape 
       ctx.globalCompositeOperation = 'destination-out';
       ctx.beginPath();
       ctx.arc(x, y, eraserRadius, 0, Math.PI*2);  
@@ -140,12 +138,23 @@ function changePaintTool(clickedTool) {
     console.log(clickedTool);
     const toolList = [
         // "open", "save","ellipse",
-        "brush", "ligne", "rectangle", "cercle", "polygone"
+        "brush", "ligne", "rectangle", "cercle", "eraser" ,"polygone"
     ];
     toolList.forEach(toolName => document.getElementById(toolName).className = "");
     document.getElementById(clickedTool).className = "selected";
     currentTool = clickedTool;
 }
+
+// New variable to set eraser size
+let eraserRadius = 10; 
+
+// Update eraser size on range change
+function handleRangeChange(event){
+  const rangeValue = event.target.value;
+  ctx.lineWidth = rangeValue;
+  eraserRadius = rangeValue;
+}
+
 
 // Polygon Code
 
