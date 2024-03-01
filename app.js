@@ -83,7 +83,7 @@ function paintCanvas(event) {
             ctx.arc(x, y, radius, 0, Math.PI * 2);
             ctx.stroke();
         } break;
-            /* 
+            
         case "eraser": {
       ctx.putImageData(startImage, 0, 0);
       ctx.globalCompositeOperation = 'destination-out';
@@ -93,8 +93,7 @@ function paintCanvas(event) {
 
       ctx.globalCompositeOperation = 'source-over';
     }
-    break;
-        } break;  */
+      break; 
         case "polygone": {
             console.log("polygon");
             ctx.putImageData(startImage, 0, 0);
