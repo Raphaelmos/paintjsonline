@@ -83,8 +83,19 @@ function paintCanvas(event) {
             ctx.arc(x, y, radius, 0, Math.PI * 2);
             ctx.stroke();
         } break;
-            /* case "eraser": {
-  
+            /* 
+        case "eraser": {
+      ctx.putImageData(startImage, 0, 0);
+
+      // Erase circle shape 
+      ctx.globalCompositeOperation = 'destination-out';
+      ctx.beginPath();
+      ctx.arc(x, y, eraserRadius, 0, Math.PI*2);  
+      ctx.fill();
+
+      ctx.globalCompositeOperation = 'source-over';
+    }
+    break;
         } break;  */
         case "polygone": {
             console.log("polygon");
