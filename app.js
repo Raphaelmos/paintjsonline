@@ -4,6 +4,7 @@ const INITIAL_COLOR = '#2c2c2c';
 /* Switched back to old style and will give a look similar to a old Vista Paint MS */
 /* Possibility to add colorPicker similar to this : https://github.com/PitPik/colorPicker */
 /* Fixable issue to have sidepanel by a change in HTML or in the CSS */
+/* UPDATE : Decided to add it directly in the JS   */
 const canvas = document.querySelector('canvas');
 const mode = document.getElementById('jsMode');
 const ctx = canvas.getContext('2d');
