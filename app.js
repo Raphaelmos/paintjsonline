@@ -121,6 +121,54 @@ function paintEnd(event) {
     canvas.removeEventListener('mouseleave', paintEnd);
 }
 
+
+/* 
+New change with 
+
+controls.color = function(cx) {
+  var input = elt('input', {type: 'color'});
+  
+  
+  input.addEventListener('change', function() {
+    cx.fillStyle = input.value;
+    cx.strokeStyle = input.value;
+  });
+  return elt('span', null, 'Color: ', input);
+};
+
+tools['Pick Color'] = function(event, cx) {
+  try {
+    var colorPos = relativePos(event, cx.canvas),
+        // returns an array [r, g, b, opacity];
+        imageData = cx.getImageData(colorPos.x, colorPos.y, 1, 1),
+        colorVals = imageData.data,
+        color = '';
+    
+    
+    color += 'rgb(';
+    
+    
+    for (var i = 0; i < colorVals.length - 1; i++) {
+      color += colorVals[i];
+      
+      
+      if (i < 2)
+        color += ',';
+    }
+    color += ')';
+    
+    cx.fillStyle = color;
+    cx.strokeStyle = color;
+    
+  } catch(e) {
+    if (e instanceof SecurityError)
+        alert('Whoops! Looks like you don\'t have permission to do that!');
+      else
+        throw e;
+  }
+};
+
+*/
 // Setup click handler for jsColor buttons
 const colorButtons = Array.from(document.getElementsByClassName('jsColor'));
 
