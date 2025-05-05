@@ -4,7 +4,7 @@ Online Version of my Paint JS web application
 
 Version en ligne de mon paint en JavaScript
 
-# *Under construction but still usable*
+# *Status*
 
 Currently improving the visual and adding more options on the page <br>
 Thinking of adding a whole side menu for the options to have a better view of the canvas instead of centering everything in the middle <br>
